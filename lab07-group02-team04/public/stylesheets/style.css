@@ -1,0 +1,23 @@
+body {
+  padding: 100px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://www.c-ober.de/wp/wp-content/uploads/2018/09/htw-berlin_emas-zertifiziert.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% ;
+}
+
+form {
+  padding: 10px 30px;
+}
+button  {
+  text-align: match-parent;
+  padding: 10px 30px;
+  color: #37ff00;
+  background-color: #ff0000;
+}
+input[type="submit"]{
+  text-align: match-parent;
+  padding: 10px 30px;
+  color: #37ff00;
+  background-color: #ff0000;
+}

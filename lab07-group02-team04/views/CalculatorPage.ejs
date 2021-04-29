@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internship Calculator</title>
+         <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <form action="/result" method="GET">
+            <h4>Please enter the period of your internship here</h4>
+            <label for="startDate">Start date:</label><br>
+            <input type="date" id="startDate" name="startDate" value="01.01.2021"><br>
+            <label for="endDate">End date:</label><br>
+            <input type="date" id="endDate" name="endDate" value="01.01.2021"><br><br>
+            <label for="name">Name:</label><br>
+            <input type="string" id="name" name="name" value="no Name"><br><br>
+            <label for="name">Description:</label><br>
+            <input type="string" id="description" name="description" value="no description"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        <form action="http://localhost:3000/">
+            <button type="submit">Back to homepage</button>
+          </form>
+    </body>
+</html>

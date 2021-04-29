@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internship Calculator</title>
+         <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1>Results:<h1>
+        <p id = "name"><%= name %></p>
+        <p id = "description" ><%= description %></p>
+        <p id = "start" ><%= startDate %></p>
+        <p id = "end"><%= endDate %></p>
+        <p id="appe"> f </p>
+        <form action="http://localhost:3000">
+              <button type="submit">Back to homepage</button>
+            </form>
+            <form action="/Datum" method="POST">
+              <input type="hidden" name="name" value=<%= name %> />
+              <input type="hidden" name="description" value= <%= description %> />
+              <input type="hidden" name="end" value= <%= endDate %> />
+              <input type="hidden" name="start" value=<%= startDate %> />
+                  <button type="submit">Post</button>
+                </form>
+    </body>
+<script type="text/javascript" src="/javascripts/calculator.js", onload = calcDates()></script>
+<script type="text/javascript" src="/javascripts/post.js", onload=transferParameters()></script>
+</html>
